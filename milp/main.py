@@ -37,7 +37,7 @@ def get_icebreakers():
         return pocket
 
 def get_all_requests():
-    with open('../dataset/requests.csv', 'r') as is_f:
+    with open('../ai/requests.csv', 'r') as is_f:
         csv_reader = csv.reader(is_f, delimiter=',')
         row_counter = 0
         pocket = []
