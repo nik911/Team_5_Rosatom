@@ -1,0 +1,472 @@
+[
+   {
+      "name": "Штурман Альбанов",
+      "IMO": "9752084",
+      "ship_class": "Arc7",
+      "speed": "15",
+      "start_point": "точка в Баренцевом море",
+      "end_point": "Саббета 3",
+      "start_time": "01.01.21 23:30",
+      "end_time": "05.01.21 5:00"
+   },
+   {
+      "name": "Штурман Альбанов",
+      "IMO": "9752084",
+      "ship_class": "Arc7",
+      "speed": "15",
+      "start_point": "Саббета 3",
+      "end_point": "точка в Баренцевом море",
+      "start_time": "06.01.21 11:00",
+      "end_time": "10.01.21 18:00"
+   },
+   {
+      "name": "Штурман Альбанов",
+      "IMO": "9752084",
+      "ship_class": "Arc7",
+      "speed": "15",
+      "start_point": "точка в Баренцевом море",
+      "end_point": "Саббета 3",
+      "start_time": "12.01.21 18:00",
+      "end_time": "16.01.21 22:00"
+   },
+   {
+      "name": "Штурман Альбанов",
+      "IMO": "9752084",
+      "ship_class": "Arc7",
+      "speed": "15",
+      "start_point": "Саббета 3",
+      "end_point": "точка в Баренцевом море",
+      "start_time": "17.01.21 6:00",
+      "end_time": "21.01.21 20:45"
+   },
+   {
+      "name": "Штурман Альбанов",
+      "IMO": "9752084",
+      "ship_class": "Arc7",
+      "speed": "15",
+      "start_point": "точка в Баренцевом море",
+      "end_point": "Саббета 3",
+      "start_time": "21.01.21 9:00",
+      "end_time": "26.01.21 22:00"
+   },
+   {
+      "name": "Штурман Альбанов",
+      "IMO": "9752084",
+      "ship_class": "Arc7",
+      "speed": "15",
+      "start_point": "Саббета 3",
+      "end_point": "точка в Баренцевом море",
+      "start_time": "28.01.21 1:00",
+      "end_time": "02.02.21 19:00"
+   },
+   {
+      "name": "Штурман Кошелев",
+      "IMO": "9759939",
+      "ship_class": "Arc7",
+      "speed": "15",
+      "start_point": "Саббета 3",
+      "end_point": "точка в Баренцевом море",
+      "start_time": "02.01.21 20:30",
+      "end_time": "06.01.21 7:00"
+   },
+   {
+      "name": "Штурман Кошелев",
+      "IMO": "9759939",
+      "ship_class": "Arc7",
+      "speed": "15",
+      "start_point": "точка в Баренцевом море",
+      "end_point": "Саббета 3",
+      "start_time": "07.01.21 19:00",
+      "end_time": "11.01.21 3:20"
+   },
+   {
+      "name": "Штурман Кошелев",
+      "IMO": "9759939",
+      "ship_class": "Arc7",
+      "speed": "15",
+      "start_point": "Саббета 3",
+      "end_point": "точка в Баренцевом море",
+      "start_time": "13.01.21 16:00",
+      "end_time": "17.01.21 14:00"
+   },
+   {
+      "name": "Штурман Кошелев",
+      "IMO": "9759939",
+      "ship_class": "Arc7",
+      "speed": "15",
+      "start_point": "точка в Баренцевом море",
+      "end_point": "Саббета 3",
+      "start_time": "17.01.21 13:00",
+      "end_time": "21.01.21 16:20"
+   },
+   {
+      "name": "Штурман Кошелев",
+      "IMO": "9759939",
+      "ship_class": "Arc7",
+      "speed": "15",
+      "start_point": "Саббета 3",
+      "end_point": "точка в Баренцевом море",
+      "start_time": "22.01.21 7:30",
+      "end_time": "26.01.21 19:00"
+   },
+   {
+      "name": "Штурман Кошелев",
+      "IMO": "9759939",
+      "ship_class": "Arc7",
+      "speed": "15",
+      "start_point": "точка в Баренцевом море",
+      "end_point": "Саббета 3",
+      "start_time": "28.01.21 2:00",
+      "end_time": "03.02.21 19:00"
+   },
+   {
+      "name": "Лагорта",
+      "IMO": "9194012",
+      "ship_class": "Arc5",
+      "speed": "15",
+      "start_point": "точка в Баренцевом море",
+      "end_point": "Саббета 3",
+      "start_time": "27.12.20 23:00",
+      "end_time": "07.01.21 17:00"
+   },
+   {
+      "name": "Лагорта",
+      "IMO": "9194012",
+      "ship_class": "Arc5",
+      "speed": "15",
+      "start_point": "Саббета 3",
+      "end_point": "точка в Баренцевом море",
+      "start_time": "20.01.21 15:00",
+      "end_time": "30.01.21 22:00"
+   },
+   {
+      "name": "Михаил Лазарев",
+      "IMO": "9837547",
+      "ship_class": "Arc7",
+      "speed": "15",
+      "start_point": "Саббета 2",
+      "end_point": "точка в Баренцевом море",
+      "start_time": "14.01.21 22:00",
+      "end_time": "18.01.21 10:00"
+   },
+   {
+      "name": "Михаил Лазарев",
+      "IMO": "9837547",
+      "ship_class": "Arc7",
+      "speed": "15",
+      "start_point": "точка в Баренцевом море",
+      "end_point": "Саббета 2",
+      "start_time": "19.01.21 12:00",
+      "end_time": "23.01.21 12:00"
+   },
+   {
+      "name": "Юрий Кучиев",
+      "IMO": "9804033",
+      "ship_class": "Arc7",
+      "speed": "14",
+      "start_point": "Саббета 1",
+      "end_point": "точка в Баренцевом море",
+      "start_time": "07.01.21 0:00",
+      "end_time": "10.01.21 14:00"
+   },
+   {
+      "name": "Юрий Кучиев",
+      "IMO": "9804033",
+      "ship_class": "Arc7",
+      "speed": "14",
+      "start_point": "точка в Баренцевом море",
+      "end_point": "Саббета 1",
+      "start_time": "26.01.21 22:00",
+      "end_time": "31.01.21 20:00"
+   },
+   {
+      "name": "Эдуард Толль",
+      "IMO": "9750696",
+      "ship_class": "Arc7",
+      "speed": "19",
+      "start_point": "точка в Баренцевом море",
+      "end_point": "Саббета 1",
+      "start_time": "01.01.21 17:30",
+      "end_time": "04.01.21 5:00"
+   },
+   {
+      "name": "Эдуард Толль",
+      "IMO": "9750696",
+      "ship_class": "Arc7",
+      "speed": "19",
+      "start_point": "Саббета 1",
+      "end_point": "точка в Баренцевом море",
+      "start_time": "07.01.21 17:00",
+      "end_time": "11.01.21 12:30"
+   },
+   {
+      "name": "Борис Давыдов",
+      "IMO": "9768394",
+      "ship_class": "Arc7",
+      "speed": "19",
+      "start_point": "точка в Баренцевом море",
+      "end_point": "Саббета 1",
+      "start_time": "08.01.21 22:00",
+      "end_time": "10.01.21 14:15"
+   },
+   {
+      "name": "Владимир Воронин",
+      "IMO": "9750737",
+      "ship_class": "Arc7",
+      "speed": "19",
+      "start_point": "точка в Баренцевом море",
+      "end_point": "Саббета 1",
+      "start_time": "16.01.21 18:00",
+      "end_time": "18.01.21 19:00"
+   },
+   {
+      "name": "Владимир Воронин",
+      "IMO": "9750737",
+      "ship_class": "Arc7",
+      "speed": "19",
+      "start_point": "Саббета 1",
+      "end_point": "точка в Баренцевом море",
+      "start_time": "26.01.21 10:00",
+      "end_time": "29.01.21 22:30"
+   },
+   {
+      "name": "Владимир Русанов",
+      "IMO": "9750701",
+      "ship_class": "Arc7",
+      "speed": "19",
+      "start_point": "Саббета 1",
+      "end_point": "точка в Баренцевом море",
+      "start_time": "01.01.21 0:00",
+      "end_time": "03.01.21 12:45"
+   },
+   {
+      "name": "Арктика-2",
+      "IMO": "9243801",
+      "ship_class": "Arc5",
+      "speed": "14",
+      "start_point": "точка в Баренцевом море",
+      "end_point": "Саббета 2",
+      "start_time": "13.01.21 1:30",
+      "end_time": "16.01.21 9:30"
+   },
+   {
+      "name": "Арктика-2",
+      "IMO": "9243801",
+      "ship_class": "Arc5",
+      "speed": "14",
+      "start_point": "Саббета 2",
+      "end_point": "точка в Баренцевом море",
+      "start_time": "24.01.21 21:00",
+      "end_time": "28.01.21 21:00"
+   },
+   {
+      "name": "РЗК Константа",
+      "IMO": "8711289",
+      "ship_class": "Arc5",
+      "speed": "15",
+      "start_point": "Сабетта 2",
+      "end_point": "точка в Баренцевом море",
+      "start_time": "29.12.20 15:00",
+      "end_time": "02.01.21 19:30"
+   },
+   {
+      "name": "РЗК Константа",
+      "IMO": "8711289",
+      "ship_class": "Arc5",
+      "speed": "15",
+      "start_point": "точка в Баренцевом море",
+      "end_point": "Сабетта 1",
+      "start_time": "09.01.21 3:00",
+      "end_time": "13.01.21 21:30"
+   },
+   {
+      "name": "РЗК Константа",
+      "IMO": "8711289",
+      "ship_class": "Arc5",
+      "speed": "15",
+      "start_point": "Сабетта 1",
+      "end_point": "точка в Баренцевом море",
+      "start_time": "19.01.21 4:00",
+      "end_time": "22.01.21 18:00"
+   },
+   {
+      "name": "Беринг",
+      "IMO": "9267297",
+      "ship_class": "Arc4",
+      "speed": "14",
+      "start_point": "Сабетта 2",
+      "end_point": "точка в Баренцевом море",
+      "start_time": "05.01.21 21:00",
+      "end_time": "08.01.21 10:00"
+   },
+   {
+      "name": "Беринг",
+      "IMO": "9267297",
+      "ship_class": "Arc4",
+      "speed": "14",
+      "start_point": "точка в Баренцевом море",
+      "end_point": "Сабетта 2",
+      "start_time": "24.01.21 10:00",
+      "end_time": "28.01.21 22:00"
+   },
+   {
+      "name": "Северный проект",
+      "IMO": "9202053",
+      "ship_class": "Arc4",
+      "speed": "12",
+      "start_point": "точка в Баренцевом море",
+      "end_point": "Сабетта 2",
+      "start_time": "23.01.21 0:30",
+      "end_time": "30.01.21 21:00"
+   },
+   {
+      "name": "Мыс Желания",
+      "IMO": "9366110",
+      "ship_class": "Arc4",
+      "speed": "16",
+      "start_point": "точка в Баренцевом море",
+      "end_point": "Сабетта 2",
+      "start_time": "31.12.20 12:00",
+      "end_time": "02.01.21 12:00"
+   },
+   {
+      "name": "Мыс Желания",
+      "IMO": "9366110",
+      "ship_class": "Arc4",
+      "speed": "16",
+      "start_point": "Сабетта 2",
+      "end_point": "точка в Баренцевом море",
+      "start_time": "16.01.2021 12:30",
+      "end_time": "19.01.21 22:00"
+   },
+   {
+      "name": "Мыс Желания",
+      "IMO": "9366110",
+      "ship_class": "Arc4",
+      "speed": "16",
+      "start_point": "точка в Баренцевом море",
+      "end_point": "Сабетта 2",
+      "start_time": "29.01.21 10:00",
+      "end_time": "01.02.2021 23:30:00:00"
+   },
+   {
+      "name": "Никифор Бегичев",
+      "IMO": "9014896",
+      "ship_class": "Arc4",
+      "speed": "14",
+      "start_point": "точка в Баренцевом море",
+      "end_point": "Сабетта 2",
+      "start_time": "16.01.21 3:00",
+      "end_time": "20.01.21 3:00"
+   },
+   {
+      "name": "Никифор Бегичев",
+      "IMO": "9014896",
+      "ship_class": "Arc4",
+      "speed": "14",
+      "start_point": "Сабетта 2",
+      "end_point": "точка в Баренцевом море",
+      "start_time": "22.01.21 3:00",
+      "end_time": "26.01.21 22:00"
+   },
+   {
+      "name": "LNG PHECDA",
+      "IMO": "9834313",
+      "ship_class": "No ice class",
+      "speed": "18",
+      "start_point": "точка в Баренцевом море",
+      "end_point": "Сабетта 1",
+      "start_time": "02.01.21 12:30",
+      "end_time": "04.01.21 12:00"
+   },
+   {
+      "name": "LNG PHECDA",
+      "IMO": "9834313",
+      "ship_class": "No ice class",
+      "speed": "18",
+      "start_point": "Сабетта 1",
+      "end_point": "точка в Баренцевом море",
+      "start_time": "04.01.21 11:00",
+      "end_time": "06.01.21 14:00"
+   },
+   {
+      "name": "LNG PHECDA",
+      "IMO": "9834313",
+      "ship_class": "No ice class",
+      "speed": "18",
+      "start_point": "точка в Баренцевом море",
+      "end_point": "Сабетта 1",
+      "start_time": "16.01.21 9:00",
+      "end_time": "18.01.21 16:30"
+   },
+   {
+      "name": "LNG PHECDA",
+      "IMO": "9834313",
+      "ship_class": "No ice class",
+      "speed": "18",
+      "start_point": "Сабетта 1",
+      "end_point": "точка в Баренцевом море",
+      "start_time": "20.01.21 9:00",
+      "end_time": "22.01.21 22:00"
+   },
+   {
+      "name": "LNG DUBHE",
+      "IMO": "9834296",
+      "ship_class": "No ice class",
+      "speed": "16",
+      "start_point": "точка в Баренцевом море",
+      "end_point": "Сабетта 1",
+      "start_time": "02.01.21 0:30",
+      "end_time": "03.01.21 23:30"
+   },
+   {
+      "name": "LNG DUBHE",
+      "IMO": "9834296",
+      "ship_class": "No ice class",
+      "speed": "16",
+      "start_point": "Сабетта 1",
+      "end_point": "точка в Баренцевом море",
+      "start_time": "06.01.21 15:00",
+      "end_time": "08.01.21 16:00"
+   },
+   {
+      "name": "LNG DUBHE",
+      "IMO": "9834296",
+      "ship_class": "No ice class",
+      "speed": "16",
+      "start_point": "точка в Баренцевом море",
+      "end_point": "Сабетта 1",
+      "start_time": "12.01.21 10:00",
+      "end_time": "14.01.21 16:30"
+   },
+   {
+      "name": "LNG DUBHE",
+      "IMO": "9834296",
+      "ship_class": "No ice class",
+      "speed": "16",
+      "start_point": "Сабетта 1",
+      "end_point": "точка в Баренцевом море",
+      "start_time": "13.01.21 19:30",
+      "end_time": "15.01.21 10:00"
+   },
+   {
+      "name": "LNG DUBHE",
+      "IMO": "9834296",
+      "ship_class": "No ice class",
+      "speed": "16",
+      "start_point": "точка в Баренцевом море",
+      "end_point": "Сабетта 1",
+      "start_time": "22.01.21 7:00",
+      "end_time": "24.01.21 18:30"
+   },
+   {
+      "name": "LNG DUBHE",
+      "IMO": "9834296",
+      "ship_class": "No ice class",
+      "speed": "16",
+      "start_point": "Сабетта 1",
+      "end_point": "точка в Баренцевом море",
+      "start_time": "23.01.21 0:30",
+      "end_time": "25.01.21 23:30"
+   }
+]
