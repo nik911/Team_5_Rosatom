@@ -2,7 +2,7 @@ from flask import Flask, request
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 from sqlalchemy.orm import relationship
-import json
+
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///ice.db'
@@ -107,13 +107,19 @@ def weather():
     else:
         try:
             id_point =  request.json['id_point']
-            imo = request.json['imo']
-            ice_class = request.json['ice_class']
-            speed = request.json['speed']
-            with open(f'weather.json', 'w') as f:
-                rep = {}
-                js = json.dumps(rep, ensure_ascii=False)
-                f.write(js)
+            coord = request.json['coord']
+            ice_situation = request.json['ice_situation']
+
+
+            editedship = db.session.query(Points).filter_by(coord=coord).one()
+            editedship.ice_situation = ice_situation
+
+            try:
+                db.session.add(editedship)
+                db.session.commit()
+                return '2'
+            except:
+                return '4'
         except:
             return ''
 
