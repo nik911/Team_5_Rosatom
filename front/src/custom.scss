@@ -1,0 +1,7 @@
+@use "../node_modules/@picocss/pico/scss/pico.scss" with ($semantic-root-element: "div#app");
+@use "../node_modules/frappe-gantt/dist/frappe-gantt.min.css";
+@use "../node_modules/leaflet/dist/leaflet.css";
+
+:root {
+    --pico-grid-row-gap: 0;
+}
