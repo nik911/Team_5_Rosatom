@@ -2,7 +2,7 @@ from flask import Flask, request
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 from sqlalchemy.orm import relationship
-
+import json
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///ice.db'
@@ -15,10 +15,11 @@ app.app_context().push()
 class Ships(db.Model):
     __tablename__ = 'ships'
     id = db.Column(db.Integer, primary_key=True)
-    imo = db.Column(db.String(30))
-    ice_class = db.Column(db.String(500))
-    speed = db.Column(db.String(500))
-    formRoute = relationship("FormForRoute", back_populates="ship")
+    name = db.Column(db.String(30))
+    imo = db.Column(db.Integer)
+    iceClass = db.Column(db.String(30))
+    speed = db.Column(db.String(30))
+
 
 
 class Points(db.Model):
@@ -26,8 +27,9 @@ class Points(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(30))
     coord = db.Column(db.String(500))
-    ice_situation = db.Column(db.Text)
-    formRoute1 = relationship("FormForRoute", back_populates="point")
+    ice_situation = db.Column(db.Integer)
+
+
 
 
 class Kar(db.Model):
@@ -38,14 +40,12 @@ class Kar(db.Model):
 
 class FormForRoute(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    id_ship = db.Column(db.ForeignKey("ships.id"), nullable=False)
-    id_a = db.Column(db.ForeignKey("points.id"), nullable=False)
-    id_b = db.Column(db.ForeignKey("points.id"), nullable=False)
+    id_ship = db.Column(db.Integer, nullable=False)
+    name_ship = db.Column(db.String(50))
+    id_a = db.Column(db.Integer, nullable=False)
+    id_b = db.Column(db.Integer, nullable=False)
     a_time = db.Column(db.DateTime, default=datetime.utcnow)
     b_time = db.Column(db.DateTime, default=datetime.utcnow)
-    date = db.Column(db.DateTime, default=datetime.utcnow)
-    ship = relationship("Ships", back_populates="formRoute")
-    point = relationship("Point", back_populates="formRoute1")
 
 
 #class Ice(db.Model):
@@ -78,26 +78,44 @@ def form():
             return ''
 
 
+@app.route('/forform',methods = ['POST', 'GET'])
+def forform():
+    if request.method == 'GET':
+        try:
+            ships = Ships.query.order_by(Ships.id).all()
+            points = Points.query.order_by(Points.id).all()
+            name_ships = []
+            for i in ships:
+                name_ships.append(i.name)
+            name_points = []
+            for i in points:
+                name_points.append(i.name)
+            rep = {"names": name_ships, "points": name_points}
+            js = json.dumps(rep, ensure_ascii=False)
+            return js
+
+        except:
+            return 'oh no'
+
+
+
 @app.route('/add_ship', methods=['POST', 'GET'])
 def add_ship():
-    if request.method == 'POST':
-        return ''
-    else:
-        try:
-            name =  request.json['name']
+    if request.method == 'GET':
+            name = request.json['name']
             imo = request.json['imo']
-            ice_class = request.json['ice_class']
+            ice_class = request.json['iceClass']
             speed = request.json['speed']
 
-            ship = Ships(name=name, imo=imo, ice_class=ice_class, speed=speed)
+
+            ship = Ships(name=name, imo=imo, iceClass=ice_class, speed=speed)
             try:
                 db.session.add(ship)
                 db.session.commit()
                 return '2'
             except:
                 return '4'
-        except:
-            return ''
+
 
 
 @app.route('/weather', methods=['POST', 'GET'])
