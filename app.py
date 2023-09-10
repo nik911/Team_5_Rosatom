@@ -40,18 +40,18 @@ class Kar(db.Model):
 
 class FormForRoute(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    id_ship = db.Column(db.Integer, nullable=False)
     name_ship = db.Column(db.String(50))
     id_a = db.Column(db.Integer, nullable=False)
     id_b = db.Column(db.Integer, nullable=False)
-    a_time = db.Column(db.DateTime, default=datetime.utcnow)
-    b_time = db.Column(db.DateTime, default=datetime.utcnow)
+    a_time = db.Column(db.String(50))
+    b_time = db.Column(db.String(50))
 
 
-#class Ice(db.Model):
-#    id = db.Column(db.Integer, primary_key=True)
-#    coord = db.Column(db.Text) #[[57.74414062500001,70.4367988185464],[66.20361328125,73.53462847039683]]
-#    ice_situation = db.Column(db.Text)
+class Ice(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    coord = db.Column(db.Text) #[[57.74414062500001,70.4367988185464],[66.20361328125,73.53462847039683]]
+    name = db.Column(db.Text)
+    ice_situation = db.Column(db.Text)
 
 #+json  с погодными условиями
 
@@ -60,22 +60,20 @@ def form():
     if request.method == 'POST':
         return ''
     else:
-        try:
-            id_ship = request.json['id_ship']
-            id_a = request.json['id_a']
-            id_b = request.json['id_b']
-            a_time = request.json['a_time']
-            b_time = request.json['b_time']
+            name_ship = request.json['name']
+            id_a = request.json['startPoint']
+            id_b = request.json['endPoint']
+            a_time = request.json['startTime']
+            b_time = request.json['endTime']
 
-            form = FormForRoute(id_ship=id_ship, id_a=id_a, id_b=id_b, a_time=a_time, b_time=b_time)
+            form = FormForRoute(name_ship=name_ship, id_a=id_a, id_b=id_b, a_time=a_time, b_time=b_time)
             try:
                 db.session.add(form)
                 db.session.commit()
                 return '2'
             except:
                 return '4'
-        except:
-            return ''
+
 
 
 @app.route('/forform',methods = ['POST', 'GET'])
@@ -118,26 +116,39 @@ def add_ship():
 
 
 
+@app.route('/forweather', methods=['POST', 'GET'])
+def forweather():
+    if request.method == 'POST':
+        return ''
+    else:
+        try:
+            points = Points.query.order_by(Points.id).all()
+            name_points = []
+            for i in points:
+                name_points.append(i.name)
+            rep = {"points": name_points}
+            js = json.dumps(rep, ensure_ascii=False)
+            return js
+        except:
+            return ''
+
+
 @app.route('/weather', methods=['POST', 'GET'])
 def weather():
     if request.method == 'POST':
         return ''
     else:
         try:
-            id_point =  request.json['id_point']
-            coord = request.json['coord']
-            ice_situation = request.json['ice_situation']
-
-
-            editedship = db.session.query(Points).filter_by(coord=coord).one()
-            editedship.ice_situation = ice_situation
-
-            try:
-                db.session.add(editedship)
+            coord = request.json['points']
+            points = Ice.query.order_by(Points.id).all()
+            name_points = []
+            for i in points:
+                name_points.append(i.name)
+            for i in range(len(name_points)-1):
+                ice = Ice(name=str([name_points[i], name_points[i+1]]), ice_situation=coord[i])
+                db.session.add(ice)
                 db.session.commit()
-                return '2'
-            except:
-                return '4'
+            
         except:
             return ''
 
